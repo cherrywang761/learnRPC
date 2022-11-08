@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/grpc_client/grpc_client.iml" filepath="$PROJECT_DIR$/grpc_client/grpc_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc_codec/grpc_codec.iml" filepath="$PROJECT_DIR$/grpc_codec/grpc_codec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc_common/grpc_common.iml" filepath="$PROJECT_DIR$/grpc_common/grpc_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc_proto/grpc_proto.iml" filepath="$PROJECT_DIR$/grpc_proto/grpc_proto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc_server/grpc_server.iml" filepath="$PROJECT_DIR$/grpc_server/grpc_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc_transport/grpc_transport.iml" filepath="$PROJECT_DIR$/grpc_transport/grpc_transport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leaarnRPC.iml" filepath="$PROJECT_DIR$/leaarnRPC.iml" />
+    </modules>
+  </component>
+</project>
