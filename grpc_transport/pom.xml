@@ -9,14 +9,19 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>rpc_transport</artifactId>
+    <artifactId>grpc_transport</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>com.hong</groupId>
-            <artifactId>rpc_common</artifactId>
+            <artifactId>grpc_common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.hong</groupId>
+            <artifactId>grpc_proto</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>

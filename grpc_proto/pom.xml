@@ -9,12 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>rpc_proto</artifactId>
+    <artifactId>grpc_proto</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>com.hong</groupId>
-            <artifactId>rpc_common</artifactId>
+            <artifactId>grpc_common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 

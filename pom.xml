@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>rpc_client</module>
-        <module>rpc_codec</module>
-        <module>rpc_common</module>
-        <module>rpc_proto</module>
-        <module>rpc_server</module>
-        <module>rpc_transport</module>
+        <module>grpc_client</module>
+        <module>grpc_codec</module>
+        <module>grpc_common</module>
+        <module>grpc_proto</module>
+        <module>grpc_server</module>
+        <module>grpc_transport</module>
     </modules>
     <groupId>com.hong</groupId>
     <artifactId>leaarnRPC</artifactId>

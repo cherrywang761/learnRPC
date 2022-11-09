@@ -1,7 +1,10 @@
 package com.hong.common.utils;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -29,27 +32,39 @@ public class ReflectionUtils {
         }
     }
 
-
+    /**
+     * 获取某个class的共有方法
+     * @param clazz 类运行时对象
+     * @return 当前类的所有公共方法
+     */
     public static Method[] getPublicMethods(Class clazz) {
         //获取这个类对象所有的方法
         Method[] methods = clazz.getDeclaredMethods();
         List<Method> list = new ArrayList<>();
         for (Method method : methods) {
-
+            if(Modifier.isPublic(method.getModifiers())){
+                list.add(method);
+            }
         }
         return list.toArray(new Method[0]);
     }
 
-//    public static void main(String[] args) {
-//        List<String> list = new ArrayList<>();
-//        String[] s = new String[0];
-//        list.add("a");
-//        list.add("b");
-//        String[] strings = list.toArray(s);
-//        System.out.println(Arrays.toString(strings));
-//    }
-
-    public static void main(String[] args) {
-        System.out.println(4&1);
+    /**
+     * 反射实现某个对象的某个方法
+     * @param obj 对象实体
+     * @param method 对象方法
+     * @param args 方法参数
+     * @return 方法返回参数
+     */
+    public static Object invoke(Object obj, Method method, Object... args){
+        try {
+            return method.invoke(obj, args);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new IllegalStateException(e.getMessage());
+        }
     }
+
+
+
 }

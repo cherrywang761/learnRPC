@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * @ClassName Peer
- * @Description 网络传输断点类
+ * @Description 网络传输端点类
  * @Author wangweihong
  * @Date 2022/11/8 15:09
  * @Version 1.0
